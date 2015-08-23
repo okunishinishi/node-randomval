@@ -63,25 +63,33 @@ var randomval = require('randomval');
 //------------------------
 // Random Bool
 //------------------------
+console.log(randomval.randomBool()); //-> false
 console.log(randomval.randomBool()); //-> true
-console.log(randomval.randomBool()); //-> false
-console.log(randomval.randomBool()); //-> false
+console.log(randomval.randomBool()); //-> true
+
+
+//------------------------
+// Random Hash
+//------------------------
+console.log(randomval.randomHash()); //-> 4b5132d020174b8a98713b6968e85f40
+console.log(randomval.randomHash()); //-> 0a233e98c2df42d68eedaf4131df6c26
+console.log(randomval.randomHash()); //-> ade29b90840944cebdbdb59d4ecc04d6
 
 
 //------------------------
 // Random Int
 //------------------------
-console.log(randomval.randomInt()); //-> -1699149190700306
-console.log(randomval.randomInt()); //-> 5223944159682253
-console.log(randomval.randomInt()); //-> -5749076673248740
+console.log(randomval.randomInt()); //-> -1203744268772214
+console.log(randomval.randomInt()); //-> 8951651193376701
+console.log(randomval.randomInt()); //-> -3876798032091500
 
 
 //------------------------
 // Random
 //------------------------
-console.log(randomval.random()); //-> 0.12896469495287843
-console.log(randomval.random()); //-> 0.888327038196566
-console.log(randomval.random()); //-> 0.6544586782330327
+console.log(randomval.random()); //-> 0.27267226086754104
+console.log(randomval.random()); //-> 0.008399375062187686
+console.log(randomval.random()); //-> 0.05492576829742302
 
 
 
@@ -98,11 +106,13 @@ API Guide
 
 | Signature | Description |
 | ---- | ----- |
-| `.random()` | Random number between 0 and 1 |
-| `.randomBool()` | Random boolean. (`true` or `false`) |
-| `.randomInt()` | Random integer value |
-| `.randomInt(min, max)` | Random integer value in range |
-
+| **.random()** | Random number between 0 and 1 |
+| **.randomBool()** | Random boolean. (`true` or `false`) |
+| **.randomInt()** | Random integer value |
+| **.randomInt(min, max)** | Random integer value in range |
+| **.randomHash()** | Random hash string |
+| **.randomHash(len)** | Random hash string with length |
+|
 <!-- Section from "docs/readme/03.API Guide.md.hbs" End -->
 
 
@@ -125,6 +135,6 @@ This software is released under the [MIT License](https://github.com/okunishinis
 Links
 ------
 
-+ [PhantomJS](http://phantomjs.org/)
++ [random-js](https://www.npmjs.com/package/random-js)
 
 <!-- Links End -->

@@ -1,6 +1,6 @@
 {
   "name": "randomval",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate random values.",
   "main": "lib",
   "scripts": {
@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/okunishinishi/node-randomval#readme",
   "dependencies": {
-    "argx": "^1.1.6"
+    "argx": "^1.1.6",
+    "random-js": "^1.0.4",
+    "uuid": "^2.0.1"
   },
   "devDependencies": {
     "ape-covering": "^1.0.8",
