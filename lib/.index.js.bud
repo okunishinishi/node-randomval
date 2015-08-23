@@ -4,15 +4,14 @@
 
 "use strict";
 
+var cozTmpl = require('coz-tmpl');
 var pkg = require('../package.json');
 
-module.exports = {
-    force: true,
-    mode: '444',
-    data: {
-        pkg: pkg
-    }
-};
+module.exports = cozTmpl.indexJsBud({
+    dirname: __dirname,
+    module: pkg.name,
+    description: pkg.description
+});
 
 if (!module.parent) {
     require('coz').render(__filename);

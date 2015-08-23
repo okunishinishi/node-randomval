@@ -33,48 +33,77 @@ Generate random values.
 
 
 
+
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "docs/readme/01.Installation.md.hbs" Start -->
+
+<a name="section-docs-readme-01-installation-md"></a>
 Installation
 -----
 
 ```bash
 npm install randomval --save
 ```
+
+<!-- Section from "docs/readme/01.Installation.md.hbs" End -->
+
+<!-- Section from "docs/readme/02.Usage.md.hbs" Start -->
+
+<a name="section-docs-readme-02-usage-md"></a>
 Usage
 ----
-
-
-### Converting a Single SVG File into PNG
 
 ```javascript
 #!/usr/bin/env/node
 
-var svgpng = require('svgpng');
+var randomval = require('randomval');
 
-svgpng(
-    'src/foo.svg',
-    'dest/foo.png',
-    {
-        size:{
-            width:400,
-            height:300
-        }
-    },
-    function(err){
-        /*...*/
-    }
-);
+//------------------------
+// Random Bool
+//------------------------
+console.log(randomval.randomBool()); //-> true
+console.log(randomval.randomBool()); //-> false
+console.log(randomval.randomBool()); //-> false
+
+
+//------------------------
+// Random Int
+//------------------------
+console.log(randomval.randomInt()); //-> -1699149190700306
+console.log(randomval.randomInt()); //-> 5223944159682253
+console.log(randomval.randomInt()); //-> -5749076673248740
+
+
+//------------------------
+// Random
+//------------------------
+console.log(randomval.random()); //-> 0.12896469495287843
+console.log(randomval.random()); //-> 0.888327038196566
+console.log(randomval.random()); //-> 0.6544586782330327
+
+
 
 ```
 
-### Converting Multiple SVG Files into PNG
 
-```javascript
+<!-- Section from "docs/readme/02.Usage.md.hbs" End -->
 
-```
+<!-- Section from "docs/readme/03.API Guide.md.hbs" Start -->
 
+<a name="section-docs-readme-03-a-p-i-guide-md"></a>
+API Guide
+---------
+
+| Signature | Description |
+| ---- | ----- |
+| `.random()` | Random number between 0 and 1 |
+| `.randomBool()` | Random boolean. (`true` or `false`) |
+| `.randomInt()` | Random integer value |
+| `.randomInt(min, max)` | Random integer value in range |
+
+<!-- Section from "docs/readme/03.API Guide.md.hbs" End -->
 
 
 <!-- Sections Start -->
