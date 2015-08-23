@@ -6,31 +6,39 @@ var randomval = require('randomval');
 // Random Bool
 //------------------------
 console.log(randomval.randomBool()); //-> false
-console.log(randomval.randomBool()); //-> true
-console.log(randomval.randomBool()); //-> true
+console.log(randomval.randomBool()); //-> false
+console.log(randomval.randomBool()); //-> false
+
+
+//------------------------
+// Random Date
+//------------------------
+console.log(randomval.randomDate()); //-> Fri Jun 17 2016 09:17:58 GMT+0900 (JST)
+console.log(randomval.randomDate()); //-> Tue Aug 09 2016 09:09:12 GMT+0900 (JST)
+console.log(randomval.randomDate()); //-> Thu Oct 22 2015 20:19:15 GMT+0900 (JST)
 
 
 //------------------------
 // Random Hash
 //------------------------
-console.log(randomval.randomHash()); //-> c2c78d0b4803450aa401edcb58048177
-console.log(randomval.randomHash()); //-> 6378b2d84de64df3942616ea3e980974
-console.log(randomval.randomHash()); //-> b90d6edf956048de90bfbf6d28bb0032
+console.log(randomval.randomHash()); //-> 74a4acbc5ab94dbbb365023e19e420f0
+console.log(randomval.randomHash()); //-> 51e8f7210d014c5c81b38c6d51153e0c
+console.log(randomval.randomHash()); //-> 120a389206cf422e951cf62a94bdf21b
 
 
 //------------------------
 // Random Int
 //------------------------
-console.log(randomval.randomInt()); //-> -7755334475142629
-console.log(randomval.randomInt()); //-> -6010704062985394
-console.log(randomval.randomInt()); //-> -8268072369693981
+console.log(randomval.randomInt()); //-> -76857541147183
+console.log(randomval.randomInt()); //-> 7103413473579555
+console.log(randomval.randomInt()); //-> -1861127911025036
 
 
 //------------------------
 // Random
 //------------------------
-console.log(randomval.random()); //-> 0.9024099284441274
-console.log(randomval.random()); //-> 0.1043218469873204
-console.log(randomval.random()); //-> 0.02503144618163211
+console.log(randomval.random()); //-> 0.6014412797796922
+console.log(randomval.random()); //-> 0.6303151658788813
+console.log(randomval.random()); //-> 0.025495296310486637
 
 

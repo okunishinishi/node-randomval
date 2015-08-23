@@ -1,6 +1,6 @@
 {
   "name": "randomval",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate random values.",
   "main": "lib",
   "scripts": {

@@ -69,27 +69,35 @@ console.log(randomval.randomBool()); //-> true
 
 
 //------------------------
+// Random Date
+//------------------------
+console.log(randomval.randomDate()); //-> Thu Feb 25 2016 05:52:08 GMT+0900 (JST)
+console.log(randomval.randomDate()); //-> Fri Nov 27 2015 21:46:50 GMT+0900 (JST)
+console.log(randomval.randomDate()); //-> Sat Feb 27 2016 17:43:49 GMT+0900 (JST)
+
+
+//------------------------
 // Random Hash
 //------------------------
-console.log(randomval.randomHash()); //-> 4b5132d020174b8a98713b6968e85f40
-console.log(randomval.randomHash()); //-> 0a233e98c2df42d68eedaf4131df6c26
-console.log(randomval.randomHash()); //-> ade29b90840944cebdbdb59d4ecc04d6
+console.log(randomval.randomHash()); //-> 3336a5d2801c478093af2d9c2c227973
+console.log(randomval.randomHash()); //-> b68f27ff6f6847cfb960c487d357fcc2
+console.log(randomval.randomHash()); //-> 0edb1564b31e47b0852276d2f0e9e807
 
 
 //------------------------
 // Random Int
 //------------------------
-console.log(randomval.randomInt()); //-> -1203744268772214
-console.log(randomval.randomInt()); //-> 8951651193376701
-console.log(randomval.randomInt()); //-> -3876798032091500
+console.log(randomval.randomInt()); //-> 6824848459486257
+console.log(randomval.randomInt()); //-> 928136176849315
+console.log(randomval.randomInt()); //-> -3949863975094664
 
 
 //------------------------
 // Random
 //------------------------
-console.log(randomval.random()); //-> 0.27267226086754104
-console.log(randomval.random()); //-> 0.008399375062187686
-console.log(randomval.random()); //-> 0.05492576829742302
+console.log(randomval.random()); //-> 0.7062572750921652
+console.log(randomval.random()); //-> 0.28409568421459963
+console.log(randomval.random()); //-> 0.4732667204835339
 
 
 
@@ -112,6 +120,8 @@ API Guide
 | **.randomInt(min, max)** | Random integer value in range |
 | **.randomHash()** | Random hash string |
 | **.randomHash(len)** | Random hash string with length |
+| **.randomDate()** | Random date |
+| **.randomDate(min, max)** | Random date in range |
 |
 <!-- Section from "docs/readme/03.API Guide.md.hbs" End -->
 
