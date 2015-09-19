@@ -1,13 +1,10 @@
 {
   "name": "randomval",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate random values.",
   "main": "lib",
   "scripts": {
-    "build": "./ci/build.js",
-    "test": "./ci/test.js",
-    "cover": "./ci/cover.js",
-    "report": "./ci/report.js"
+    "test": "./ci/test.js"
   },
   "repository": "okunishinishi/node-randomval",
   "keywords": [
