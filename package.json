@@ -9,10 +9,7 @@
     "cover": "./ci/cover.js",
     "report": "./ci/report.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/okunishinishi/node-randomval.git"
-  },
+  "repository": "okunishinishi/node-randomval",
   "keywords": [
     "random",
     "generator"

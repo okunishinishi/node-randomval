@@ -37,9 +37,9 @@ Generate random values.
 <!-- Sections Start -->
 <a name="sections"></a>
 
-<!-- Section from "docs/readme/01.Installation.md.hbs" Start -->
+<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
 
-<a name="section-docs-readme-01-installation-md"></a>
+<a name="section-doc-readme-01-installation-md"></a>
 Installation
 -----
 
@@ -47,11 +47,11 @@ Installation
 npm install randomval --save
 ```
 
-<!-- Section from "docs/readme/01.Installation.md.hbs" End -->
+<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
 
-<!-- Section from "docs/readme/02.Usage.md.hbs" Start -->
+<!-- Section from "doc/readme/02.Usage.md.hbs" Start -->
 
-<a name="section-docs-readme-02-usage-md"></a>
+<a name="section-doc-readme-02-usage-md"></a>
 Usage
 ----
 
@@ -64,51 +64,51 @@ var randomval = require('randomval');
 // Random Bool
 //------------------------
 console.log(randomval.randomBool()); //-> false
-console.log(randomval.randomBool()); //-> true
-console.log(randomval.randomBool()); //-> true
+console.log(randomval.randomBool()); //-> false
+console.log(randomval.randomBool()); //-> false
 
 
 //------------------------
 // Random Date
 //------------------------
-console.log(randomval.randomDate()); //-> Thu Feb 25 2016 05:52:08 GMT+0900 (JST)
-console.log(randomval.randomDate()); //-> Fri Nov 27 2015 21:46:50 GMT+0900 (JST)
-console.log(randomval.randomDate()); //-> Sat Feb 27 2016 17:43:49 GMT+0900 (JST)
+console.log(randomval.randomDate()); //-> Fri Jun 17 2016 09:17:58 GMT+0900 (JST)
+console.log(randomval.randomDate()); //-> Tue Aug 09 2016 09:09:12 GMT+0900 (JST)
+console.log(randomval.randomDate()); //-> Thu Oct 22 2015 20:19:15 GMT+0900 (JST)
 
 
 //------------------------
 // Random Hash
 //------------------------
-console.log(randomval.randomHash()); //-> 3336a5d2801c478093af2d9c2c227973
-console.log(randomval.randomHash()); //-> b68f27ff6f6847cfb960c487d357fcc2
-console.log(randomval.randomHash()); //-> 0edb1564b31e47b0852276d2f0e9e807
+console.log(randomval.randomHash()); //-> 74a4acbc5ab94dbbb365023e19e420f0
+console.log(randomval.randomHash()); //-> 51e8f7210d014c5c81b38c6d51153e0c
+console.log(randomval.randomHash()); //-> 120a389206cf422e951cf62a94bdf21b
 
 
 //------------------------
 // Random Int
 //------------------------
-console.log(randomval.randomInt()); //-> 6824848459486257
-console.log(randomval.randomInt()); //-> 928136176849315
-console.log(randomval.randomInt()); //-> -3949863975094664
+console.log(randomval.randomInt()); //-> -76857541147183
+console.log(randomval.randomInt()); //-> 7103413473579555
+console.log(randomval.randomInt()); //-> -1861127911025036
 
 
 //------------------------
 // Random
 //------------------------
-console.log(randomval.random()); //-> 0.7062572750921652
-console.log(randomval.random()); //-> 0.28409568421459963
-console.log(randomval.random()); //-> 0.4732667204835339
+console.log(randomval.random()); //-> 0.6014412797796922
+console.log(randomval.random()); //-> 0.6303151658788813
+console.log(randomval.random()); //-> 0.025495296310486637
 
 
 
 ```
 
 
-<!-- Section from "docs/readme/02.Usage.md.hbs" End -->
+<!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "docs/readme/03.API Guide.md.hbs" Start -->
+<!-- Section from "doc/readme/03.API Guide.md.hbs" Start -->
 
-<a name="section-docs-readme-03-a-p-i-guide-md"></a>
+<a name="section-doc-readme-03-a-p-i-guide-md"></a>
 API Guide
 ---------
 
@@ -123,7 +123,7 @@ API Guide
 | **.randomDate()** | Random date |
 | **.randomDate(min, max)** | Random date in range |
 |
-<!-- Section from "docs/readme/03.API Guide.md.hbs" End -->
+<!-- Section from "doc/readme/03.API Guide.md.hbs" End -->
 
 
 <!-- Sections Start -->
