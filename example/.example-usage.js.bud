@@ -2,27 +2,27 @@
  * Bud file for example usage.
  */
 
-"use strict";
+'use strict'
 
-var randomval = require('../lib');
+const randomval = require('../lib')
 
 module.exports = {
-    force: true,
-    mode: '444',
-    data: {
-        examples: Object.keys(randomval).map(function (name) {
-            return {
-                name: name,
-                results: [
-                    randomval[name](),
-                    randomval[name](),
-                    randomval[name]()
-                ]
-            }
-        })
-    }
+  force: true,
+  mode: '444',
+  data: {
+    examples: Object.keys(randomval).map(function (name) {
+      return {
+        name: name,
+        results: [
+          randomval[ name ](),
+          randomval[ name ](),
+          randomval[ name ]()
+        ]
+      }
+    })
+  }
 };
 
 if (!module.parent) {
-    require('coz').render(__filename);
+  require('coz').render(__filename)
 }

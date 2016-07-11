@@ -59,46 +59,46 @@ Usage
 ```javascript
 #!/usr/bin/env/node
 
-var randomval = require('randomval');
+var randomval = require('randomval')
 
 //------------------------
 // Random Bool
 //------------------------
-console.log(randomval.randomBool()); //-> false
-console.log(randomval.randomBool()); //-> true
-console.log(randomval.randomBool()); //-> false
+console.log(randomval.randomBool()) //-> false
+console.log(randomval.randomBool()) //-> true
+console.log(randomval.randomBool()) //-> false
 
 
 //------------------------
 // Random Date
 //------------------------
-console.log(randomval.randomDate()); //-> Fri Feb 26 2016 00:17:03 GMT+0900 (JST)
-console.log(randomval.randomDate()); //-> Fri Jul 08 2016 09:37:34 GMT+0900 (JST)
-console.log(randomval.randomDate()); //-> Mon May 30 2016 02:38:52 GMT+0900 (JST)
+console.log(randomval.randomDate()) //-> Fri Feb 26 2016 00:17:03 GMT+0900 (JST)
+console.log(randomval.randomDate()) //-> Fri Jul 08 2016 09:37:34 GMT+0900 (JST)
+console.log(randomval.randomDate()) //-> Mon May 30 2016 02:38:52 GMT+0900 (JST)
 
 
 //------------------------
 // Random Hash
 //------------------------
-console.log(randomval.randomHash()); //-> 74400018a7fd43dfa4bff75f4b6da566
-console.log(randomval.randomHash()); //-> a6cf5ec18dfe43bd9dc39d94afc3f7a9
-console.log(randomval.randomHash()); //-> 1b56145ce6e84ccb97a999cbb9d2f9b0
+console.log(randomval.randomHash()) //-> 74400018a7fd43dfa4bff75f4b6da566
+console.log(randomval.randomHash()) //-> a6cf5ec18dfe43bd9dc39d94afc3f7a9
+console.log(randomval.randomHash()) //-> 1b56145ce6e84ccb97a999cbb9d2f9b0
 
 
 //------------------------
 // Random Int
 //------------------------
-console.log(randomval.randomInt()); //-> 3061263319957503
-console.log(randomval.randomInt()); //-> 3050111965855743
-console.log(randomval.randomInt()); //-> 292883122880511
+console.log(randomval.randomInt()) //-> 3061263319957503
+console.log(randomval.randomInt()) //-> 3050111965855743
+console.log(randomval.randomInt()) //-> 292883122880511
 
 
 //------------------------
 // Random
 //------------------------
-console.log(randomval.random()); //-> 0.6340260966680944
-console.log(randomval.random()); //-> 0.5538445585407317
-console.log(randomval.random()); //-> 0.36733108782209456
+console.log(randomval.random()) //-> 0.6340260966680944
+console.log(randomval.random()) //-> 0.5538445585407317
+console.log(randomval.random()) //-> 0.36733108782209456
 
 
 

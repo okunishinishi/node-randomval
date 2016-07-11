@@ -2,15 +2,15 @@
  * Bud file for test.
  */
 
-"use strict";
+'use strict'
 
-var cozTmpl = require('coz-tmpl');
+var cozTmpl = require('coz-tmpl')
 
 module.exports = cozTmpl.nodeunitTestJsBud({
     src: __dirname + '/../lib/*.js',
     dest: __dirname
-});
+})
 
 if (!module.parent) {
-    require('coz').render(__filename);
+    require('coz').render(__filename)
 }

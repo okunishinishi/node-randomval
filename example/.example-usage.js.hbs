@@ -1,13 +1,13 @@
 #!/usr/bin/env/node
 
-var randomval = require('randomval');
+const randomval = require('randomval')
 
 {{#each examples}}
 //------------------------
 // {{titlecase name}}
 //------------------------
 {{#each results}}
-console.log(randomval.{{../name}}()); //-> {{this}}
+console.log(randomval.{{../name}}()) //-> {{this}}
 {{/each}}
 
 
