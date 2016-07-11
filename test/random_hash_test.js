@@ -1,34 +1,25 @@
 /**
  * Test case for randomHash.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var randomHash = require('../lib/random_hash.js')
+const randomHash = require('../lib/random_hash.js')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-    done()
-};
+it('Random hash', () => {
+  for (let i = 0; i < 100; i++) {
+    let val = randomHash()
+    assert.ok(val)
+    assert.equal(val.length, 32)
+  }
+})
 
-exports.tearDown = function (done) {
-    done()
-};
-
-exports['Random hash'] = function (test) {
-    for (var i = 0; i < 100; i++) {
-        var val = randomHash()
-        test.ok(val)
-        test.equal(val.length, 32)
-    }
-    test.done()
-};
-
-
-exports['Random hash with length'] = function (test) {
-    for (var i = 0; i < 100; i++) {
-        var val = randomHash(128)
-        test.ok(val)
-        test.equal(val.length, 128)
-    }
-    test.done()
-};
+it('Random hash with length', () => {
+  for (let i = 0; i < 100; i++) {
+    let val = randomHash(128)
+    assert.ok(val)
+    assert.equal(val.length, 128)
+  }
+})
 

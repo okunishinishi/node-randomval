@@ -1,23 +1,17 @@
 /**
  * Test case for randomBool.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var randomBool = require('../lib/random_bool.js')
+const randomBool = require('../lib/random_bool.js')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-    done()
-};
+it('Random bool', () => {
+  for (let i = 0; i < 1000; i++) {
+    let val = randomBool()
+    assert.equal(typeof val, 'boolean')
+  }
+})
 
-exports.tearDown = function (done) {
-    done()
-};
-
-exports['Random bool'] = function (test) {
-    for (var i = 0; i < 1000; i++) {
-        var val = randomBool()
-        test.equal(typeof val, 'boolean')
-    }
-    test.done()
-};
-
+/* global it */

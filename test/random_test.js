@@ -1,24 +1,19 @@
 /**
  * Test case for random.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var random = require('../lib/random.js')
+const random = require('../lib/random.js')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-    done()
-};
+it('Random', () => {
+  for (let i = 0; i < 1000; i++) {
+    let val = random()
+    assert.ok(0 <= val)
+    assert.ok(val <= 1)
+  }
+})
 
-exports.tearDown = function (done) {
-    done()
-};
-
-exports['Random'] = function (test) {
-    for (var i = 0; i < 1000; i++) {
-        var val = random()
-        test.ok(0 <= val)
-        test.ok(val <= 1)
-    }
-    test.done()
-};
+/* global it */
 

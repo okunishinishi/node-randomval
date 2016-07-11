@@ -1,36 +1,30 @@
 /**
  * Test case for randomDate.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var randomDate = require('../lib/random_date.js')
+const randomDate = require('../lib/random_date.js')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-    done()
-};
+it('Random date', () => {
+  for (let i = 0; i < 100; i++) {
+    let date = randomDate()
+    assert.ok(date)
+    assert.ok(date instanceof Date)
+  }
+})
 
-exports.tearDown = function (done) {
-    done()
-};
+it('Random date in range', () => {
+  let from = new Date()
+  let to = new Date(from.getTime() + 200)
+  for (let i = 0; i < 100; i++) {
+    let date = randomDate(from, to)
+    assert.ok(date)
+    assert.ok(from.getTime() <= date.getTime())
+    assert.ok(date.getTime() <= to.getTime())
+  }
+})
 
-exports['Random date'] = function (test) {
-    for (var i = 0; i < 100; i++) {
-        var date = randomDate()
-        test.ok(date)
-        test.ok(date instanceof Date)
-    }
-    test.done()
-};
-
-exports['Random date in range'] = function (test) {
-    var from = new Date(),
-        to = new Date(from.getTime() + 200)
-    for (var i = 0; i < 100; i++) {
-        var date = randomDate(from, to)
-        test.ok(date)
-        test.ok(from.getTime() <= date.getTime())
-        test.ok(date.getTime() <= to.getTime())
-    }
-    test.done()
-};
+/* global it */
 

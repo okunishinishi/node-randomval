@@ -1,37 +1,27 @@
 /**
  * Test case for randomInt.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var randomInt = require('../lib/random_int.js')
+const randomInt = require('../lib/random_int.js')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-    done()
-};
+it('Random int', () => {
+  for (let i = 0; i < 100; i++) {
+    let val = randomInt()
+    assert.equal(parseInt(val), val)
+  }
+})
 
-exports.tearDown = function (done) {
-    done()
-};
+it('Random int in range', () => {
+  let min = 0, max = 100;
+  for (let i = 0; i < 100; i++) {
+    let val = randomInt(min, max)
+    assert.equal(parseInt(val), val)
+    assert.ok(min <= val)
+    assert.ok(val <= max)
+  }
+})
 
-exports['Random int'] = function (test) {
-    for (var i = 0; i < 100; i++) {
-        var val = randomInt()
-        test.equal(parseInt(val), val)
-    }
-    test.done()
-};
-
-exports['Random int in range'] = function (test) {
-    var min = 0, max = 100;
-    for (var i = 0; i < 100; i++) {
-        var val = randomInt(min, max)
-        test.equal(parseInt(val), val)
-        test.ok(min <= val)
-        test.ok(val <= max)
-    }
-    test.done()
-};
-
-
-
-
+/* global it */
