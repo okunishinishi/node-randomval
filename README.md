@@ -48,6 +48,7 @@ Generate random values.
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -61,52 +62,53 @@ npm install randomval --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 ----
 
 ```javascript
 #!/usr/bin/env/node
 
-var randomval = require('randomval')
+const randomval = require('randomval')
 
-//------------------------
+// ------------------------
 // Random Bool
-//------------------------
+// ------------------------
+console.log(randomval.randomBool()) //-> false
+console.log(randomval.randomBool()) //-> false
 console.log(randomval.randomBool()) //-> true
-console.log(randomval.randomBool()) //-> false
-console.log(randomval.randomBool()) //-> false
 
 
-//------------------------
+// ------------------------
 // Random Date
-//------------------------
-console.log(randomval.randomDate()) //-> Sat Oct 31 2015 23:53:46 GMT+0900 (JST)
-console.log(randomval.randomDate()) //-> Fri Mar 25 2016 01:28:28 GMT+0900 (JST)
-console.log(randomval.randomDate()) //-> Wed Aug 24 2016 08:21:36 GMT+0900 (JST)
+// ------------------------
+console.log(randomval.randomDate()) //-> Mon Mar 06 2017 14:08:06 GMT+0900 (JST)
+console.log(randomval.randomDate()) //-> Tue Sep 06 2016 11:22:36 GMT+0900 (JST)
+console.log(randomval.randomDate()) //-> Mon Nov 14 2016 04:45:47 GMT+0900 (JST)
 
 
-//------------------------
+// ------------------------
 // Random Hash
-//------------------------
-console.log(randomval.randomHash()) //-> 0154478efcef47febac5c4bad06b842f
-console.log(randomval.randomHash()) //-> 406e701e084644768c0b9374c9cab59f
-console.log(randomval.randomHash()) //-> 74e408b6fe3e4ef59af990e4ff3384cc
+// ------------------------
+console.log(randomval.randomHash()) //-> b8b4140ec0b540f49537107a4181ecf2
+console.log(randomval.randomHash()) //-> a8bf2af5352444deb0ee473d65695373
+console.log(randomval.randomHash()) //-> 64a140a45a3749a293a5217d4605bd3f
 
 
-//------------------------
+// ------------------------
 // Random Int
-//------------------------
-console.log(randomval.randomInt()) //-> 7169439824871423
-console.log(randomval.randomInt()) //-> -8349882758725631
-console.log(randomval.randomInt()) //-> 7534013241622527
+// ------------------------
+console.log(randomval.randomInt()) //-> -6003676195253712
+console.log(randomval.randomInt()) //-> 8739623463866023
+console.log(randomval.randomInt()) //-> -1558813704957300
 
 
-//------------------------
+// ------------------------
 // Random
-//------------------------
-console.log(randomval.random()) //-> 0.5143260841723531
-console.log(randomval.random()) //-> 0.29279421153478324
-console.log(randomval.random()) //-> 0.21549427206628025
+// ------------------------
+console.log(randomval.random()) //-> 0.2411873720690907
+console.log(randomval.random()) //-> 0.5048802996226827
+console.log(randomval.random()) //-> 0.9655034625113583
 
 
 
@@ -119,6 +121,7 @@ console.log(randomval.random()) //-> 0.21549427206628025
 <!-- Section from "doc/guides/03.API Guide.md.hbs" Start -->
 
 <a name="section-doc-guides-03-a-p-i-guide-md"></a>
+
 API Guide
 ---------
 
