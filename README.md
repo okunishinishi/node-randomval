@@ -75,40 +75,40 @@ const randomval = require('randomval')
 // Random Bool
 // ------------------------
 console.log(randomval.randomBool()) //-> false
-console.log(randomval.randomBool()) //-> false
 console.log(randomval.randomBool()) //-> true
+console.log(randomval.randomBool()) //-> false
 
 
 // ------------------------
 // Random Date
 // ------------------------
-console.log(randomval.randomDate()) //-> Thu Aug 11 2016 06:05:41 GMT+0900 (JST)
-console.log(randomval.randomDate()) //-> Mon Apr 24 2017 03:20:31 GMT+0900 (JST)
-console.log(randomval.randomDate()) //-> Sat Jul 23 2016 10:16:25 GMT+0900 (JST)
+console.log(randomval.randomDate()) //-> Fri May 19 2017 10:08:30 GMT+0900 (JST)
+console.log(randomval.randomDate()) //-> Tue Jan 03 2017 11:38:37 GMT+0900 (JST)
+console.log(randomval.randomDate()) //-> Wed Apr 26 2017 09:48:01 GMT+0900 (JST)
 
 
 // ------------------------
 // Random Hash
 // ------------------------
-console.log(randomval.randomHash()) //-> 0ddced3571c24f228443f760c3763f64
-console.log(randomval.randomHash()) //-> cdb765faf6f44a9ab6123221daafc93f
-console.log(randomval.randomHash()) //-> 65482304e8014eaaa8132107b08779cf
+console.log(randomval.randomHash()) //-> 9e25ffaf16c44cef905ac41d7eba9b0e
+console.log(randomval.randomHash()) //-> 8070d16483174b52addb279acfab35a8
+console.log(randomval.randomHash()) //-> c3b32838b1df4d63be288c29b5f08c4c
 
 
 // ------------------------
 // Random Int
 // ------------------------
-console.log(randomval.randomInt()) //-> -2439996233874324
-console.log(randomval.randomInt()) //-> 7249627967245591
-console.log(randomval.randomInt()) //-> 255659273392895
+console.log(randomval.randomInt()) //-> -3775429265547132
+console.log(randomval.randomInt()) //-> 6800382290569115
+console.log(randomval.randomInt()) //-> 6243310185959875
 
 
 // ------------------------
 // Random
 // ------------------------
-console.log(randomval.random()) //-> 0.5048742056154916
-console.log(randomval.random()) //-> 0.36379830705698435
-console.log(randomval.random()) //-> 0.3258186543992534
+console.log(randomval.random()) //-> 0.5230201762805973
+console.log(randomval.random()) //-> 0.7990088393583148
+console.log(randomval.random()) //-> 0.03769800498352316
 
 
 

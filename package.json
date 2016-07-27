@@ -1,6 +1,6 @@
 {
   "name": "randomval",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Generate random values.",
   "main": "lib",
   "browser": "shim/browser",
