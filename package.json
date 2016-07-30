@@ -1,6 +1,6 @@
 {
   "name": "randomval",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Generate random values.",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,20 +23,20 @@
   },
   "homepage": "https://github.com/okunishinishi/node-randomval#readme",
   "dependencies": {
-    "argx": "^2.0.2",
+    "argx": "^3.0.0",
     "uuid": "^2.0.2"
   },
   "devDependencies": {
-    "ababel": "^1.0.19",
-    "ababel-es2015": "^1.0.2",
-    "amocha": "^1.0.8",
-    "ape-releasing": "^4.0.2",
-    "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.7",
-    "ape-tmpl": "^5.0.14",
-    "ape-updating": "^4.0.4",
-    "coz": "^6.0.14",
-    "filedel": "^2.0.2",
+    "ababel": "^1.0.25",
+    "ababel-es2015": "^1.0.5",
+    "amocha": "^1.0.10",
+    "ape-releasing": "^4.0.4",
+    "ape-reporting": "^3.0.2",
+    "ape-tasking": "^4.0.8",
+    "ape-tmpl": "^5.0.15",
+    "ape-updating": "^4.0.5",
+    "coz": "^6.0.16",
+    "filedel": "^2.0.3",
     "injectmock": "^2.0.0"
   },
   "engines": {
